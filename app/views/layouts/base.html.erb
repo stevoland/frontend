@@ -88,6 +88,25 @@
       gs = function () {
         vp.content = "width=device-width, minimum-scale=0.25, maximum-scale=1.6";
       };
+
+      // Fix for chrome jumplink bug
+      // if(d.getElementsByClassName && d.addEventListener){
+      //   w.addEventListener("DOMContentLoaded",bindJumplinks,false);
+      // }
+      // function bindJumplinks(){
+      //   var links = d.getElementsByClassName('js-jump'),
+      //     l = links.length;  
+
+      //   while(l--){
+      //     links[l].addEventListener('click', jumpToLink, false);
+      //   }
+      // };
+      // function jumpToLink(){
+      //   var id = this.getAttribute('href').replace('#','');
+      //     t = document.getElementById(id);
+      //   t.setAttribute('tabIndex', -1);
+      //   t.focus();
+      // }
     })(window,document);
 
   </script>

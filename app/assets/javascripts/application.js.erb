@@ -1,7 +1,7 @@
 //= require require_config
 
+// Font loading
 if(MAS.supports.fonts && MAS.bootstrap.fontsUrl) {
-
   require(['webfonts'], function () {
     var fontConfig = {
       custom: {
@@ -13,6 +13,7 @@ if(MAS.supports.fonts && MAS.bootstrap.fontsUrl) {
   })
 }
 
+// Analytics
 require(['analytics'], function (analytics) {
   analytics.scrollTracking({
     el: '.editorial',
@@ -20,6 +21,7 @@ require(['analytics'], function (analytics) {
   });
 });
 
+// Collapsable elements
 require([MAS.bootstrap.I18n_locale, 'collapsable'], function (Text, Collapsable) {
   var articleCollapsables = new Collapsable({
     showOnlyFirst:true,
