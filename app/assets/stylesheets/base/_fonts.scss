@@ -11,28 +11,28 @@
 
   @font-face {
     font-family: 'museo_sans';
-    src: asset-data-url('museosans_300-webfont.woff') format('woff');
+    src: asset-url('museosans_300-webfont.woff', font) format('woff');
     font-weight: 300;
     font-style: normal;
   }
 
   @font-face {
     font-family: 'museo_sans';
-    src: asset-data-url('museosans_500-webfont.woff') format('woff');
+    src: asset-url('museosans_500-webfont.woff', font) format('woff');
     font-weight: 500;
     font-style: normal;
   }
 
   @font-face {
     font-family: 'museo_sans';
-    src: asset-data-url('museosans_700-webfont.woff') format('woff');
+    src: asset-url('museosans_700-webfont.woff', font) format('woff');
     font-weight: 700;
     font-style: normal;
   }
 
   @font-face {
     font-family: 'icon-font';
-    src: asset-data-url('icon-font.woff') format('woff');
+    src: asset-url('icon-font.woff', font) format('woff');
     font-weight: normal;
     font-style: normal;
   }
