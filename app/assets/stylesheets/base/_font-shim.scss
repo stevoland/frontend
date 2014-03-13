@@ -1,0 +1,3 @@
+@function asset-data-url($path) {
+  @return asset-url(#{$path}, font);
+}
