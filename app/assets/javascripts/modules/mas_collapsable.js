@@ -58,7 +58,7 @@ define(['log', 'jquery'], function (Global, $) {
 
       this.$parent.on('focusout', function(){
         setTimeout(function(){
-          if( _this.$parent.find(document.activeElement).length === 0 && _this.selected){
+          if( _this.$parent.find(document.activeElement).length === 0 && _this.selected !== false){
             _this.hide(_this.selected);
           }
         },300);
@@ -149,7 +149,7 @@ define(['log', 'jquery'], function (Global, $) {
 
     // Accessibility support for spacebar
     this.sections[i].trigger.on('keypress', function(e){
-      if(e.which === 32) {
+      if(e.which === 32 && _this.sections[i].trigger[0].nodeName !== 'BUTTON') {
         e.preventDefault();
         _this.sections[i].trigger.trigger('click');
       }

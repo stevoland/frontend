@@ -1,18 +1,9 @@
-.l-styleguide-container {
-  max-width: $mq-xl;
-  margin: 0 auto;
-}
-
 // Styleguide layout-container
 
-.l-container {
+.l-constrained {
   @extend %clearfix;
-  max-width: $mq-l;
+  max-width: $mq-xl;
   margin: 0 auto;
-}
-
-.l-container--space {
-  @include columnPadding(12);
 }
 
 // Layout 1 column full width
@@ -59,5 +50,3 @@
 .l-split-end {
   float: right;
 }
-
-
