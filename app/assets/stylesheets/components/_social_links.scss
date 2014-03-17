@@ -15,10 +15,12 @@
 
   a {
     display: block;
-    width: 48px;
-    height: 44px;
-    padding-left: 27%;
-    background-color: $color-green-primary;
+    // width: 48px;
+    // height: 44px;
+    height:$baseline-unit*7;
+    width:$baseline-unit*7;
+    padding: $baseline-unit/2 0 0 $baseline-unit/2;
+    // background-color: $color-green-primary;
     border-right: 1px solid $color-white-translucent;
 
     &:hover,
@@ -35,17 +37,17 @@
   }
 
   .icon--facebook {
-    font-size: 22px;
-    margin-left: 5px;
+    // font-size: 22px;
+    // margin-left: 5px;
   }
 
   .icon--youtube {
-    font-size: 22px;
-    margin-left: 1px;
+    // font-size: 22px;
+    // margin-left: 1px;
   }
 
   .icon--twitter {
-    font-size: 22px;
+    // font-size: 22px;
   }
 
 }

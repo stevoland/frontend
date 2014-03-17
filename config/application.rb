@@ -24,6 +24,9 @@ module Frontend
                                   enhanced_fixed.css
                                   enhanced_responsive.css
                                   fonts.css
+                                  icons.data.png.css
+                                  icons.data.svg.css
+                                  icons.fallback.css
                                   styleguide.css)
 
     # Configure additional application JS assets to precompile.

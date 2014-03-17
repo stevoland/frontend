@@ -21,9 +21,6 @@
 .search-box__submit {
   @extend .button--unstyled;
   position: absolute;
-  bottom: -1px;
+  bottom: 2px;
   right: 6px;
-  height: $baseline-unit*7;
-  font-size: 24px;
-  color: $color-search-text;
 }
