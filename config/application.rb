@@ -25,8 +25,7 @@ module Frontend
                                   enhanced_responsive.css
                                   frontend-assets/stylesheets/basic.css
                                   frontend-assets/stylesheets/font_files.css
-                                  frontend-assets/stylesheets/font_base64.css
-                                  styleguide.css)
+                                  frontend-assets/stylesheets/font_base64.css)
 
     # Configure additional application JS assets to precompile.
     config.assets.precompile += %w(html_inspector.js
@@ -37,8 +36,7 @@ module Frontend
                                   modules/mas_common.js
                                   modules/mas_log.js
                                   modules/mas_pubsub.js
-                                  modules/mas_scrollTracking.js
-                                  styleguide.js)
+                                  modules/mas_scrollTracking.js)
 
     # Configure additional vendor JS assets to precompile.
     config.assets.precompile += %w(html5shiv/dist/html5shiv.js
@@ -46,6 +44,12 @@ module Frontend
                                    jquery-waypoints/waypoints.js
                                    jquery-ujs/src/rails.js
                                    requirejs/require.js)
+
+    # Configure additional stylguide JS + CSS assets to precompile.
+    config.assets.precompile += %w(styleguide/fixed.css
+                                  styleguide/responsive.css
+                                  styleguide.js)
+
 
     # Configure Google Tag Manager ID
     config.google_tag_manager_id = 'GTM-WVFLH9'
